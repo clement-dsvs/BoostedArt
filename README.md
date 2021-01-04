@@ -91,7 +91,7 @@ Laure arrived later, as she joined us in the early days of Boosted'Art, but very
 
 ### Jeremy PROVOST
 
-> Jeremy is the last of our group, with several personal front-end experiences, he has put them to the group's advantage by setting up as a composer of the documentation and the graphic part, including the Logo for example, and has participated in the implementation of the CSS/HTML. He also took care of the implementation of the Gantt for team management.
+> Jeremy is the last of our group, with several personal front-end experiences, he has put them to the group's advantage by setting up as a composer of the documentation and its translation in English and the graphical part, including the Logo for example, and has participated in the implementation of the CSS/HTML. He also took care of the implementation of the Gantt for team management.
 
 ## Further upgrades
 
