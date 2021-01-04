@@ -75,19 +75,19 @@ Laure arrived later, as she joined us in the early days of Boosted'Art, but very
 
 ### Florian HERMEL
 
-Florian is our indicated back-end comrade, so he has been arranged together with Clément and Laure on SQL and database issues.
+> Florian is our indicated back-end comrade, so he has been arranged together with Clément and Laure on SQL and database issues.
 
 ### Enzo DUPONT
 
-Enzo is one of the two front-end oriented collaborators in charge of the HTML and CSS realisation.
+> Enzo is one of the two front-end oriented collaborators in charge of the HTML and CSS realisation.
 
 ### Laure DELACHAPELLE
 
-Laure is our bridge between two worlds, she set up the specifications and worked on the different areas with the exception of CSS. So she worked as much with Jeremy for the documentation and with the latter plus Enzo for the front-end, as with Florian and Clément for the back-end.
+> Laure is our bridge between two worlds, she set up the specifications and worked on the different areas with the exception of CSS. So she worked as much with Jeremy for the documentation and with the latter plus Enzo for the front-end, as with Florian and Clément for the back-end.
 
 ### Jeremy PROVOST
 
-Jeremy is the last of our group, with several personal front-end experiences, he has put them to the group's advantage by setting up as a composer of the documentation and the graphic part, including the Logo for example, and has participated in the implementation of the CSS/HTML. He also took care of the implementation of the Gantt for team management.
+> Jeremy is the last of our group, with several personal front-end experiences, he has put them to the group's advantage by setting up as a composer of the documentation and the graphic part, including the Logo for example, and has participated in the implementation of the CSS/HTML. He also took care of the implementation of the Gantt for team management.
 
 ## Further upgrades
 
