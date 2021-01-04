@@ -16,10 +16,10 @@
     <div id= "Titre">Boosted Art </div>
     <nav id= "Menu">
         <ul>
-            <li>Accueil</li>
-            <li>Boutique</li>
-            <li>Promotions</li>
-            <li>Nous contacter</li>
+            <li><a href="index.php"> Accueil </a></li>
+            <li><a href="shop.php"> Boutique </a></li>
+            <li><a href="artists.php"> Artistes </a></li>
+            <li><a href="contact.php"> Contact </a></li>
             <li>    <?php
             if(isset($_SESSION["useruid"])){
                 echo "<li><a href='profile.php'>Profile</a></li>";
