@@ -1,0 +1,144 @@
+* {
+    color: solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul img{
+    width: 110px;
+}
+a{
+    color : rgba(245, 95, 95, 0.24);
+    text-decoration: none;
+}
+
+a:hover{
+    color :rgb(245, 95, 95)
+}
+#logMenuAcceuil ul{
+    width: 95%;
+    justify-content: flex-end;
+    display: inline-flex;
+}
+
+#logMenuAcceuil ul li{
+    font-size: 15px;
+    margin: 40px;
+    border-bottom: black;
+    text-decoration: none;
+    color :rgba(245, 95, 95, 0.24);
+    list-style: none;
+ 
+}
+
+#logoAcceuil{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#traitMenu{
+    margin: 0 auto;
+    padding-left: 192px;
+    width: 600px;
+    border-bottom: solid black;
+
+}
+
+#textBienvenue{
+    text-align: center;
+    font-size: 30px;
+}
+
+#secondFont{
+    background: linear-gradient( #ffeb99 1%, #ffcc00 70%);
+    width: 100%;
+    height: 700px;
+    box-shadow: 5px 10px black;
+}
+
+#redirection ul{
+    margin-top: px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#redirection ul li{
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 100px;
+}
+
+#redirection1{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin : 0 auto;
+    transform: rotate(45deg);
+    transition: transform 2s;
+    border : groove black;
+    box-shadow: 5px 10px rgba(245, 95, 95, 0.24);
+
+}
+#redirection1Text{
+    margin: 50px;
+    transform: rotate(-45deg);
+}
+#redirection1:hover{
+    transform:  rotateY(180deg) rotate(45deg);
+}
+
+#redirection2{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin : 0 auto;
+    transform: rotate(45deg);
+    transition: transform 2s;
+    border : solid black;
+    box-shadow: 5px 10px rgba(245, 95, 95, 0.24);
+}
+#redirection2Text{
+    margin: 50px;
+    transform: rotate(-45deg);
+}
+#redirection2:hover{
+    transform:  rotateY(180deg) rotate(45deg);
+}
+
+#redirection3{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin : 0 auto;
+    transform: rotate(45deg);
+    transition: transform 2s;
+    border : solid black;
+    box-shadow: 5px 10px rgba(245, 95, 95, 0.24);
+
+}
+#redirection3Text{
+    margin: 50px;
+    transform: rotate(-45deg);
+   
+}
+#redirection3:hover{
+    transform:  rotateY(180deg) rotate(45deg);
+}
+
+#intituleRedirection ul li{
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0%;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: 0px 100px ;
+    text-align: center;
+}
+
+#intituleRedirection ul{
+    text-align: center;
+}
