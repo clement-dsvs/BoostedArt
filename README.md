@@ -36,11 +36,15 @@
 
 ## General Infos
 
-The project was originally one of our first through our formation at the training center, so it has been spread all across the past three months before the redaction of that readme, which was the 4th of January, one week before the releaase date.
-When it comes to the features, I redirect yourself toward the Documentation folder where you should find the Specifications with all the informations on that matter.
+The project was originally one of our first "real" experiences that we gained from our training at Promeo. In this sense, it was therefore extended to the last three months before the writing of this readme, which was done on January 4th, one week before the official release date of the website. 
 
-All that has to be said there, is that we were originally planifying a website with the core idea of packages/bundles you could buy to inspire yourself on a subject, which could be a global theme such as "Cyberpunk" in which you would find items related to this specific theme, may it be pictures, music, artworks and so on.
-The particularity that should distinguish us from our competitors is that the website would end up with users/artists in the capacity of uploading their own bundles and they could gain some money through that process, so if we should put words on that formula, it would be a mix between Deviantart, Humblebundle, and Fiverr.
+As far as the functionalities are concerned, I refer you to the Documentation folder where you should find the specifications with all the information on this subject.
+
+The first idea was quite simple: a website with the central idea of packages/bundles that you could buy artistic elements to inspire you on a subject, that's where the name of the site comes from, we "boost" the creativity of our customers, as for the logo in the form of a box, this naturally refers to our bundle system.
+
+The bundles are divided by subject or more general themes such as "Cyberpunk" in which you will find elements specifically related to the theme, whether images, music, artworks, etc..
+
+The peculiarity that was to distinguish us from our competitors comes from the fact that the website would mainly be fed by users/artists able to upload their own bundles while being able to earn a little money through this process, a small portion of the sum obtained being taken by the site to finance its existence. So if we had to put words to this formula, it would be a mix between Deviantart, Humblebundle and Fiverr.
 
 The evocated release date for the project is the 9th of January.
 
