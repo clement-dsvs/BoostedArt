@@ -93,8 +93,4 @@ Laure arrived later, as she joined us in the early days of Boosted'Art, but very
 
 There are many improvements to come, but we still lack the knowledge - and the time - to implement them. 
 
-Among the options being considered are, for example : 
-
-¤ Pack to change the visual of the site
-¤ Page " Promotion "
-¤ Dark mode
+Among the options being considered are, for example : A optional bundle to change the visual of the website, a promotion page where you could find bundles in said promotion, and a dark mode for those who prefer a darker design.
