@@ -55,6 +55,7 @@ The evocated release date for the project is the 9th of January.
 ***Softwares :***
 
 > * Visual Studio Code v1.52
+> * PHPStorm
 > * XAMPP v3.2.4 & Laragon v4.0.16 depending on used computers
 > * Apache SQL
 > * PHPMyAdmin
