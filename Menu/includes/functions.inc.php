@@ -77,18 +77,16 @@ function uidExists($conn, $username, $email){
 }
 
 function createUser($conn, $name,$email,$phone,$pwd){
-
-    $sql = "INSERT INTO user (name,mail,phone,password) VALUES (?, ?, ?, ?) ;";
+    $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+    $sql = "INSERT INTO user (name,mail,phone,password) VALUES ('{$name}', '{$email}', '{$phone}', '{$hashedPwd}') ;";
     $stmt = mysqli_stmt_init($conn);
 
     if  (!mysqli_stmt_prepare($stmt, $sql)){
-        header("location: ../signup.php?error=stmtfailed");
+        header("location: ../signup.php?error=stmtSignupFailed");
         exit();
     }
 
-    $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
-    
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $email,$phone,$hashedPwd);
+    //mysqli_stmt_bind_param($stmt, "ssss", $name, $email,$phone,$hashedPwd);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
