@@ -15,13 +15,13 @@ a{
 a:hover{
     color :rgb(245, 95, 95)
 }
-#logMenuAcceuil ul{
+#logMenuAccueil ul{
     width: 95%;
     justify-content: flex-end;
     display: inline-flex;
 }
 
-#logMenuAcceuil ul li{
+#logMenuAccueil ul li{
     font-size: 15px;
     margin: 40px;
     border-bottom: black;
@@ -31,7 +31,7 @@ a:hover{
  
 }
 
-#logoAcceuil{
+#logoAccueil{
     text-align: center;
     margin: 0 auto;
 }
