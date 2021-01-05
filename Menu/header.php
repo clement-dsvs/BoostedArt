@@ -16,18 +16,17 @@
     <div id= "Titre">Boosted Art </div>
     <nav id= "Menu">
         <ul>
-            <li><a href="index.php"> Accueil </a></li>
-            <li><a href="shop.php"> Boutique </a></li>
-            <li><a href="artists.php"> Artistes </a></li>
-            <li><a href="contact.php"> Contact </a></li>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="shop.php">Boutique</a></li>
+            <li><a href="contact.php">Nous contacter</a></li>
             <li>    <?php
             if(isset($_SESSION["useruid"])){
-                echo "<li><a href='profile.php'>Profile</a></li>";
-                echo "<li><a href='includes/logout.inc.php'>Logout</a></li>";
+                echo "<li><a href='profile.php'>Profil</a></li>";
+                echo "<li><a href='includes/logout.inc.php'>Déconnexion</a></li>";
             }
             else{
-                echo "<li><a href='login.php'>Log In</a></li>";
-                echo "<li><a href='signup.php'>Register</a></li>";
+                echo "<li><a href='login.php'>Connexion</a></li>";
+                echo "<li><a href='signup.php'>Inscription</a></li>";
             }   
         ?></li>
         </ul>

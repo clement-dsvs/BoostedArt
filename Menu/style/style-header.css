@@ -1,6 +1,18 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     z-index: 1;
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #B8B13B;
+}
+
+a:visited{
+    color: #B8B13B;
+    text-decoration: none;
 }
 
 body {
