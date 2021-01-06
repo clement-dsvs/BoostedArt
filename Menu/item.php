@@ -4,5 +4,5 @@
     require_once 'header.php';
     $id_bundle = $_GET['ref'];
 
-    $sql = "SELECT * FROM bundle WHERE id = {$id_bundle}";
+   getBundleInfos($conn,$ref_bundle);
 
