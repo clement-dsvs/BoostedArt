@@ -16,58 +16,13 @@
 
 .item .buy{
     position: absolute;
-    width: 100%;
+    width: 30%;
     height:30px;
     border-style: none;
     border-radius: 6px;
     background-color:  #f9d300 ;
     cursor: pointer;
     color:black;
-	bottom:0px;
+    bottom:5px;
+    left: 35%;
 }
-
-.buy-container{
-    position: absolute;
-    border: solid 2px #f9d300;
-    border-radius: 9px;
-    width:50%;
-    right:5%;
-    bottom: 10px;
-    height: 30px;
-    transition: 400ms linear;
-}
-
-.buy-container:hover{
-    height: 60px;
-    transition: 200ms linear;
-}
-
-.item .quantity{
-    position: absolute;
-    top:6%;
-    width: 100%;
-    left:10%;
-    z-index: 0;
-}
-
-.item .quantity .number{
-    width:20px;
-}
-
-.minus,.plus{
-    cursor: pointer;
-    border:solid 2px black;
-    border-radius: 50%;
-    width:25px;
-    height: 25px;
-    padding: 0px;
-    padding-bottom: 2px;
-    background-color:  #e5e5e5 ;
-}
-
-.minus:hover,.plus:hover{
-    background-color:  #bfbfbf ;
-    transition: 400ms linear;
-}
-
-
