@@ -23,9 +23,8 @@
                 <input type="password" name="pwdrepeat" id="pwd" placeholder="Répéter Mot de Passe"><br>
             </div>
             <button type="submit" name="submit" id="insc">S'inscrire</button>
-
         </form>
-
+        <div id="compte">Déjà un compte ? Cliquez <a href="login.php">ici</a></div>
         <?php
 
             if(isset($_GET["error"])){

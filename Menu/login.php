@@ -24,7 +24,7 @@
             </div>
             <button type="submit" name="submit" id="insc">Log In</button>
         </form>
-
+        <div id="compte">Pas encore de compte ? Cliquez <a href="signup.php">ici</a></div>
         </div>
 
         <?php
