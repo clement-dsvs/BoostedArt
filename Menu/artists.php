@@ -1,57 +1,51 @@
 <head>
 <?php
-        require_once 'header.php'
+        require_once 'header.php';
     ?>
-    <link rel="stylesheet" href="style/style-artists.css">
+    <link rel="stylesheet" href="/style/artists.css">
 </head>
 <body>
 
 <div class="rech">
-    <label for="srch">Rechercher un artiste</label>
-    <input id="srch">
+    <form method="get">
+	   <input type="search" name="recherche" placeholder="Recherche" />
+	   <input type="submit" value="Valider" />
+    </form>
 </div>
+
+<?php 
+
+try {
+    $bdd=new PDO('mysql:host=localhost;dbname=boostedart;charset=UTF8', 'root','root');
+    array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+}
+
+catch(Exception $e) {
+    die('Erreur :' .$e->getMessage());
+}
+
+$artistes = $bdd->query('SELECT name FROM user ORDER BY id DESC');
+	if(isset($_GET['recherche']) AND !empty($_GET['recherche'])) {
+	   $recherche = htmlspecialchars($_GET['recherche']);
+	   $artistes = $bdd->query('SELECT name FROM user WHERE name LIKE "%'.$recherche.'%" ORDER BY id DESC');
+	   echo $artistes;
+	}
+
+$getAllArtists = $bdd->query('SELECT * FROM user WHERE id_rank = 2 ORDER BY creation DESC');
+foreach($getAllArtists->fetchAll() as $data) {
+?>
 
 <div class="a">
     <div class="nd">
-        <div id="name">Francky Vincent</div>
-        <div id="date">Membre depuis: 10/04/2053</div>
+        <div id="name">Nom de l'artiste : <?php echo $data['name']; ?><br></div>
+        <div id="date">Membre depuis : <?php echo $data['creation']; ?><br></div>
     </div>
     <button id="consult">Consulter la page</>
 </div>
-<div class="a">
-    <div class="nd">
-        <div id="name">Patrick Sébastien</div>
-        <div id="date">Membre depuis: 08/03/1963</div>
-    </div>
-    <button id="consult">Consulter la page</button>
-</div>
-<div class="a">
-    <div class="nd">
-        <div id="name">Yannick Noah</div>
-        <div id="date">Membre depuis: 20/09/2010</div>
-    </div>
-    <button id="consult">Consulter la page</button>
-</div>
-<div class="a">
-    <div class="nd">
-        <div id="name">Dany Brillant</div>
-        <div id="date">Membre depuis: 16/01/1829</div>
-    </div>
-    <button id="consult">Consulter la page</button>
-</div>
-<div class="a">
-    <div class="nd">
-        <div id="name">Christophe Maé</div>
-        <div id="date">Membre depuis: 25/07/53</div>
-    </div>
-    <button id="consult">Consulter la page</button>
-</div>
-<div class="a">
-    <div class="nd">
-        <div id="name">Magic System</div>
-        <div id="date">Membre depuis: 06/05/253</div>
-    </div>
-    <button id="consult">Consulter la page</button>
-</div>
+
+<?php 
+} 
+?>
 
 </body>
+</html>
