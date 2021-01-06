@@ -11,7 +11,7 @@
                 echo("
                         <div class='item' id='item-{$bundle[0]}'>
 
-                                <img src='bob.png' alt='' class='vitrine'>
+                                <img src='/bundles/{{$bundle[0]}}/cover.jpg' alt='' class='vitrine'>
                                 <p class='title'>{$bundle[2]}</p>
                                 <p class='artiste'>{$bundle[4]}</p>
 
