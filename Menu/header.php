@@ -21,7 +21,7 @@
             <li><a href="shop.php">Boutique</a></li>
             <li><a href="contact.php">Nous contacter</a></li>
             <li>    <?php
-            if(isset($_SESSION["useruid"])){
+            if(isset($_SESSION["user-name"])){
                 echo "<li><a href='profile.php'>Profil</a></li>";
                 echo "<li><a href='includes/logout.inc.php'>Déconnexion</a></li>";
             }

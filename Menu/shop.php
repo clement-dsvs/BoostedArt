@@ -12,7 +12,7 @@
                         <div class='item' id='item-{$bundle[0]}'>
 
                                 <img src='bundle/{$bundle[0]}/cover.jpg' alt='' class='vitrine'>
-                                <p class='title'>{$bundle[2]}</p>
+                                <a class='title'>{$bundle[2]}</p>
                                 <p class='artiste'>{$bundle[4]}</p>
 
                                 <div class='buy-container'>
