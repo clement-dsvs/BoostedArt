@@ -50,15 +50,15 @@
     <br>
     <div id="redirection">
         <ul>
-            <li><div id="redirection1">
-                    <div id="redirection1Text"><a href="shop.php"><img src="Logo/shopping-cart.png" alt="Chariot"></a></div> 
-                </div></li>
-            <li><div id="redirection2">
-                    <div id="redirection2Text"><a href="profile.php"><img src="Logo/user.png" alt="bonhomme"></a></div>
-                </div></li>
-            <li><div id="redirection3">
-                    <div id="redirection3Text"><a href="contact.php"><img src="Logo/help.png" alt="question"></a></div>
-                </div></li>
+            <li><a id="redirection1" href="shop.php">
+                    <div id="redirection1Text"><img src="Logo/shopping-cart.png" alt="Chariot"></div></a>
+                </a></li>
+            <li><a id="redirection2" href="profile.php">
+                    <div id="redirection2Text"><img src="Logo/user.png" alt="bonhomme"></div></a>
+                </a></li>
+            <li><a id="redirection3" href="contact.php">
+                    <div id="redirection3Text"><img src="Logo/help.png" alt="question"></div></a>
+                </a></li>
         </ul>
     </div>
     <div id="intituleRedirection">
