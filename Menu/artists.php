@@ -38,7 +38,7 @@ foreach($getAllArtists->fetchAll() as $data) {
 <div class="a">
     <div class="nd">
         <div id="name">Nom de l'artiste : <?php echo $data['name']; ?><br></div>
-        <div id="date">Date de création de compte : <?php echo $data['creation']; ?><br></div>
+        <div id="date">Membre depuis : <?php echo $data['creation']; ?><br></div>
     </div>
     <button id="consult">Consulter la page</>
 </div>
