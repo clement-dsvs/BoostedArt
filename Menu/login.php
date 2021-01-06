@@ -2,7 +2,7 @@
     <?php
     require_once 'header.php';
     ?>
-    <link rel="stylesheet" href="style/signup.css">
+    <link rel="stylesheet" href="style/style-signup.css">
 </head>
 
 
