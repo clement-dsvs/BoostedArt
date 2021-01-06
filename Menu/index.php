@@ -13,9 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Carter+One&family=Courgette&family=Do+Hyeon&family=Fredoka+One&family=Lobster+Two:wght@700&family=Shrikhand&family=Suez+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onmousedown="return false">
     
-</body>
 <div id="logMenuAccueil">
     <ul>
     <?php
