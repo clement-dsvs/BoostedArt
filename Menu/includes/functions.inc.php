@@ -135,7 +135,7 @@ function loginUser($conn, $mail, $pwd){
 
 function getItems($conn){
 
-    $sql = "SELECT * FROM bundle;";
+    $sql = "SELECT * FROM bundle WHERE expiration > NOW() ;";
     $stmt = mysqli_stmt_init($conn);
 
     if(!mysqli_stmt_prepare($stmt,$sql)){
