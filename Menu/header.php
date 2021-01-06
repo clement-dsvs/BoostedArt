@@ -13,7 +13,7 @@
 </head>
 
 <header> 
-    <div id= "Titre">Boosted Art </div>
+   <div id= "Titre"><img src="Logo/LogoBoostedArtwoSymbol.png" alt="logoBoostedArt"> </div>
     <nav id= "Menu">
         <ul>
             <li><a href="index.php">Accueil</a></li>
