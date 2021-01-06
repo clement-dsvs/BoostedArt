@@ -1,8 +1,9 @@
-<?php
-
-    include_once 'header.php'
-
-?>
+<head>
+    <?php
+    require_once 'header.php';
+    ?>
+    <link rel="stylesheet" href="style/signup.css">
+</head>
 
 
 <body>
@@ -16,12 +17,12 @@
 
         <div class="signup-form-form">
 
-        <form action="includes/login.inc.php" method="post">
-
-            <input type="text" name="e-mail"  placeholder="E-mail">
-            <input type="password" name="pwd"  placeholder="Password">
-            <button type="submit" name="submit">Log In</button>
-
+        <form action="includes/login.inc.php" method="post" id="formins">
+            <div class="ins">
+                <input type="text" name="e-mail" id="mail" placeholder="E-mail">
+                <input type="password" name="pwd" id="pwd" placeholder="Password">
+            </div>
+            <button type="submit" name="submit" id="insc">Log In</button>
         </form>
 
         </div>

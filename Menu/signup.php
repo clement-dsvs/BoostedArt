@@ -1,10 +1,9 @@
-<?php
-
-    include_once 'header.php'
-
-?>
-
-
+<head>
+    <?php
+    require_once 'header.php';
+    ?>
+    <link rel="stylesheet" href="style/signup.css">
+</head>
 <body>
     
 
@@ -12,16 +11,18 @@
 
     <section class="signup-form">
 
-        <h2>Sign Up</h2>
+        <h2>S'inscrire</h2>
 
-        <form action="includes/signup.inc.php" method="post">
+        <form action="includes/signup.inc.php" method="post" id="formins">
 
-            <input type="text" name="name"  placeholder="Prénom Nom">
-            <input type="text" name="email"  placeholder="E-mail">
-            <input type="text" name="phone"  placeholder="Téléphone">
-            <input type="password" name="pwd"  placeholder="Mot de Passe">
-            <input type="password" name="pwdrepeat"  placeholder="Répéter Mot de Passe">
-            <button type="submit" name="submit">S'inscrire</button>
+            <div class="ins">
+                <input type="text" name="name" id="pn" placeholder="Prénom Nom" autocomplete="off"><br>
+                <input type="text" name="email" id="mail" placeholder="E-mail" autocomplete="off"><br>
+                <input type="text" name="phone" id="tel" placeholder="Téléphone" autocomplete="off"><br>
+                <input type="password" name="pwd" id="pwd" placeholder="Mot de Passe"><br>
+                <input type="password" name="pwdrepeat" id="pwd" placeholder="Répéter Mot de Passe"><br>
+            </div>
+            <button type="submit" name="submit" id="insc">S'inscrire</button>
 
         </form>
 
