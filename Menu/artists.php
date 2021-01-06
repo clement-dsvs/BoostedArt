@@ -15,6 +15,15 @@
 
 <?php 
 
+try {
+    $bdd=new PDO('mysql:host=localhost;dbname=boostedart;charset=UTF8', 'root','root');
+    array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+}
+
+catch(Exception $e) {
+    die('Erreur :' .$e->getMessage());
+}
+		
 $artistes = $bdd->query('SELECT name FROM user ORDER BY id DESC');
 	if(isset($_GET['recherche']) AND !empty($_GET['recherche'])) {
 	   $recherche = htmlspecialchars($_GET['recherche']);
