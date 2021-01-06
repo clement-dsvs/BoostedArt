@@ -94,9 +94,9 @@ function createUser($conn, $name,$email,$phone,$pwd){
 
 }
 
-function emptyInputLogin($username,$pwd){
+function emptyInputLogin($mail,$pwd){
 
-    if  (empty($username) || empty($pwd)){
+    if  (empty($mail) || empty($pwd)){
         $result = true;
     }
     else{
