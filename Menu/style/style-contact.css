@@ -1,0 +1,51 @@
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Redressed, cursive;
+}
+
+#contact_form {
+    background-color: dimgrey;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px double black;
+    border-radius: 20px;
+}
+.ins {
+    border: 0;
+    width: 100%;
+}
+.required {
+    font-family: Redressed, cursive;
+    font-kerning: normal;
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+#name,#email {
+    width: 60%;
+    height: 30px;
+}
+#name:hover,#email:hover,#message:hover {
+    background-color: ghostwhite;
+}
+#submit_button{
+    background-color: #ffcc00;
+    border: 0;
+    transition: 300ms;
+    cursor: pointer;
+    width: 100%;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 2%;
+    height: 5%;
+}
+#submit_button:hover {
+    background-color: black;
+    transition: 300ms;
+    color: gold;
+}
+.row {
+    margin-left:1%;
+}

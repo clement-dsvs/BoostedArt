@@ -1,9 +1,14 @@
 <html>
-<?php
-        require_once 'header.php'
+<head>
+    <?php
+    require_once 'header.php';
     ?>
+    <link rel="stylesheet" href="style/style-contact.css">
+</head>
+<body>
 
 <form id="contact_form" method="post">
+    <h2>Nous contacter</h2>
 
   <div class="row">
     <label class="required" for="name">Votre nom :</label><br />
@@ -17,7 +22,7 @@
 
   <div class="row">
     <label class="required" for="message">Votre message :</label><br />
-    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+    <textarea id="message" class="input" name="message" rows="10" cols="40"></textarea><br />
   </div>
     
     <input id="submit_button" type="submit" value="Envoyer" />
