@@ -13,8 +13,8 @@
 
                 <img src='bundle/{$bundle[0]}/cover.jpg' alt='' class='Minia'>
                 <p class='title'>{$bundle[2]}</p>
-                <p class='Artist'>{$bundle[3]}</p>
-                <p class='Desc'>{$bundle[4]}</p>
+                <p class='Artist'>{$bundle[4]}</p>
+                <p class='Desc'>{$bundle[3]}</p>
                         
             </div>
                 ");
