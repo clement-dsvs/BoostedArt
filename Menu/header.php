@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/0abcd961be.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Carter+One&family=Courgette&family=Do+Hyeon&family=Fredoka+One&family=Lobster+Two:wght@700&family=Shrikhand&family=Suez+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="Logo/favicon.png"  type="image/png">
 </head>
 
 <header> 
