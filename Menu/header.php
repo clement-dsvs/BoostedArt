@@ -21,6 +21,7 @@
         <ul>
             <li><a href="index.php">Accueil</a></li>
             <li><a href="shop.php">Boutique</a></li>
+            <li><a href="artists.php">Nos Artistes</a></li>
             <li><a href="contact.php">Nous contacter</a></li>
             <li>    <?php
             if(isset($_SESSION["user-name"])){
