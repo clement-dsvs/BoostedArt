@@ -9,6 +9,7 @@
     <title>Accueil Boosted'art</title>
     <link rel="stylesheet" href="style/style-accueil.css">
     <script src="https://kit.fontawesome.com/0abcd961be.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Logo/favicon.png"  type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Carter+One&family=Courgette&family=Do+Hyeon&family=Fredoka+One&family=Lobster+Two:wght@700&family=Shrikhand&family=Suez+One&display=swap" rel="stylesheet">
 </head>
 
