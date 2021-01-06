@@ -13,13 +13,13 @@
 
     <section class="signup-form">
 
-        <h2>Sign Up</h2>
+        <h2>Se connecter</h2>
 
         <div class="signup-form-form">
 
         <form action="includes/login.inc.php" method="post">
 
-            <input type="text" name="uid"  placeholder="Username/Email">
+            <input type="text" name="e-mail"  placeholder="E-mail">
             <input type="password" name="pwd"  placeholder="Password">
             <button type="submit" name="submit">Log In</button>
 

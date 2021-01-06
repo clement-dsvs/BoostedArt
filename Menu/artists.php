@@ -2,7 +2,7 @@
 <?php
         require_once 'header.php'
     ?>
-    <link rel="stylesheet" href="artists.css">
+    <link rel="stylesheet" href="style/style-artists.css">
 </head>
 <body>
 
