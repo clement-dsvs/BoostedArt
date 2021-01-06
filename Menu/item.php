@@ -4,5 +4,6 @@
     require_once 'header.php';
     $id_bundle = $_GET['ref'];
 
-   getBundleInfos($conn,$ref_bundle);
+   $bundle = getBundleInfos($conn,$ref_bundle);
+   var_dump($bundle);
 

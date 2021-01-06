@@ -167,6 +167,6 @@ function getBundleInfos($conn,$ref_bundle){
 
     $resultData = mysqli_stmt_get_result($stmt);
     $bundle = mysqli_fetch_assoc($resultData);
-    var_dump($bundle);
+    return $bundle;
 
 }
