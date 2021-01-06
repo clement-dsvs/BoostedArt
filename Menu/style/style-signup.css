@@ -1,0 +1,48 @@
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Redressed, cursive;
+}
+
+#formins {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
+}
+.signup-form {
+    background-color: dimgrey;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2% 2% 2%;
+    border: 7px double black;
+    border-radius: 20px;
+}
+.ins {
+    border: 0;
+    width: 100%;
+}
+#pn,#mail,#tel,#pwd {
+    width: 100%;
+    height: 30px;
+}
+#pn:hover,#mail:hover,#tel:hover,#pwd:hover {
+    background-color: ghostwhite;
+}
+#insc{
+    background-color: #ffcc00;
+    border: 0;
+    transition: 300ms;
+    cursor: pointer;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#insc:hover {
+    background-color: black;
+    transition: 300ms;
+    color: gold;
+}
