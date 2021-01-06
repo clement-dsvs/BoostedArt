@@ -3,7 +3,9 @@ h2 {
     font-size: 40px;
     font-family: Redressed, cursive;
 }
-
+#compte {
+    margin-left:20%;
+}
 #formins {
     display: flex;
     width: 60%;
