@@ -59,6 +59,7 @@ The evocated release date for the project is the 9th of January.
 > * XAMPP v3.2.4 & Laragon v4.0.16 depending on used computers
 > * Apache SQL
 > * PHPMyAdmin
+> * Photoshop 21
 
 ***Languages :***
 
