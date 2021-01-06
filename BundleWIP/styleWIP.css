@@ -1,0 +1,130 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+}
+
+body{
+    background-color: rgb(13, 13, 13);
+}
+
+.item {
+    border: 1px solid;
+    border-color:  rgb(255, 204, 0);
+    width: 250px;
+    height: 350px;
+    border-radius: 6px 6px 25px 25px;
+    position: absolute;
+    box-shadow: 3px 3px 15px black;
+    background-color: rgb(13, 13, 13);
+}
+
+.Minia {
+    width: 100%;
+    border-top-left-radius: 3.5px;
+    border-top-right-radius: 3.5px;
+    border-bottom: solid rgb(255, 204, 0) 1px;
+    max-height: 150px;
+}
+
+.item .buy {
+    position: absolute;
+    width: 75%;
+    height: 30px;
+    border-style: none;
+    border-radius: 1px;
+    background-color:rgb(255, 204, 0);
+    cursor: pointer;
+    color: black;
+}
+
+.buy-container {
+    position: absolute;
+    border: solid;
+    border-color: rgb(255, 204, 0)
+    border-radius: 9px;
+    width: 50%;
+    right: 5%;
+    bottom: 10px;
+    height: 30px;
+    transition: 400ms cubic-bezier(1, -0.81, .36, 1.09);
+}
+
+.buy-container:hover {
+    height: 60px;
+    transition: 200ms linear;
+}
+
+.item .quantity {
+    position: absolute;
+    bottom: 6%;
+    width: 100%;
+    left: 10%;
+    z-index: 0;
+}
+
+.item .quantity .number {
+    width: 20px;
+}
+
+.minus,
+.plus {
+    cursor: pointer;
+    border: solid 2px black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    padding-bottom: 2px;
+    background-color: #e5e5e5;
+}
+
+.minus:hover,
+.plus:hover {
+    background-color: #bfbfbf;
+    transition: 400ms linear;
+}
+
+p.title {
+    margin-left: 7%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:105%;
+}
+
+p.desc {
+    margin-left: 7%;
+    color: white;
+    font-family: Verdana;
+    font-style: italic;
+    font-size:70%;
+}
+
+p.artiste {
+    font-family: 'Cinzel', serif;
+    margin-left: 32%;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align:center;
+    padding-top: 1px;
+    background-color:rgb(213, 167, 113);
+    
+}
+
+.ArtistLogo {
+        width: 30px
+        height: 30px;
+        color: rgb(255, 204, 0)
+}
+
+#item-2.item {
+    margin-left: 20%;
+}
+
+#item-3.item {
+    margin-left: 40%;
+}
+
+hr {
+    border-top: 8px solid rgba(255, 204, 0, 0.61);
+    border-radius: 5px;
