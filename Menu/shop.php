@@ -9,18 +9,14 @@
 
         foreach($bundles as $bundle){
                 echo("
-                <div class='item' id='item-{$bundle[0]}'>
-
-                <img src='bundle/{$bundle[0]}/cover.jpg' alt='' class='Minia'>
-                <p class='title'>{$bundle[2]}</p>
-                <p class='Artist'>{$bundle[4]}</p>
-                <p class='Desc'>{$bundle[3]}</p>
-                        
-            </div>
+                <a href='item.php?ref={$bundle[0]}' class='item' id='item-{$bundle[0]}'>
+                        <img src='bundle/{$bundle[0]}/cover.jpg' alt='' class='Minia'>
+                        <p class='title'>{$bundle[2]}</p>
+                        <p class='Artist'>{$bundle[4]}</p>
+                        <p class='Desc'>{$bundle[3]}</p>      
+                </a>
                 ");
         }
-        //<button class='buy'><i class='fas fa-shopping-cart'></i></button>ZTYEUWVB4AUXN
-
 ?>
 
 </html>

@@ -153,3 +153,7 @@ function getItems($conn){
     return $rows;
 
 }
+
+function getBundleInfos(){
+    
+}
