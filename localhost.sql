@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mar. 05 jan. 2021 à 10:18
+-- Généré le : mer. 06 jan. 2021 à 07:38
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -136,11 +136,18 @@ CREATE TABLE `user` (
   `name` varchar(20) NOT NULL,
   `mail` varchar(40) NOT NULL,
   `phone` varchar(20) NOT NULL,
-  `password` varchar(40) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `creation` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `bio` text,
   `id_rank` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `mail`, `phone`, `password`, `creation`, `bio`, `id_rank`) VALUES
+(2, 'Clement Desavis', 'clement@test.com', '0123456789', '$2y$10$lPOYcOISahIssQAR1J30t.bKt6LNRNKn2yVJwzjVpx/sTyLarrrnu', '2021-01-05 13:15:33', NULL, 1);
 
 --
 -- Index pour les tables déchargées
@@ -245,7 +252,7 @@ ALTER TABLE `rank`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Contraintes pour les tables déchargées
