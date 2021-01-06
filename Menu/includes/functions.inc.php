@@ -155,18 +155,19 @@ function getItems($conn){
 }
 
 function getBundleInfos($conn,$ref_bundle){
-    $sql = "SELECT * FROM bundle WHERE id = {$ref_bundle}";
+    $sql = "SELECT * FROM bundle WHERE id = ?;";
     $stmt = mysqli_stmt_init($conn);
 
     if(!mysqli_stmt_prepare($stmt,$sql)){
         header('location: ./shop.php?error=stmtBundleFailed');
         exit();
     }
-
+    mysqli_stmt_bind_param($stmt,"i",$ref_bundle);
     mysqli_stmt_execute($stmt);
 
     $resultData = mysqli_stmt_get_result($stmt);
     $bundle = mysqli_fetch_assoc($resultData);
+    mysqli_stmt_close($stmt);
     return $bundle;
 
 }
