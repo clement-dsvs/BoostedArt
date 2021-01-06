@@ -77,7 +77,7 @@ a:hover{
     margin : 0 auto;
     transform: rotate(45deg);
     transition: transform 2s;
-    border : groove black;
+    border : solid black;
     box-shadow: 5px 10px rgba(245, 95, 95, 0.24);
 
 }
@@ -142,3 +142,4 @@ a:hover{
 #intituleRedirection ul{
     text-align: center;
 }
+
