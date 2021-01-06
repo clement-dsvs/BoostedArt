@@ -15,7 +15,7 @@
     <link rel="icon" href="Logo/favicon.png"  type="image/png">
 </head>
 
-<header> 
+<header onmousedown="return false">
    <div id= "Titre"><img src="Logo/LogoBoostedArtwoSymbol.png" alt="logoBoostedArt"> </div>
     <nav id= "Menu">
         <ul>
