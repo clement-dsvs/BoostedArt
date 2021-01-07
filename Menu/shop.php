@@ -7,7 +7,8 @@
 
         $bundles = getItems($conn);
         echo("<div id='container-shop'>");
-        foreach($bundles as $bundle){
+        if(isset($_SESSION["user-name"])){
+                foreach($bundles as $bundle){
                 echo("
                 <a href='item.php?ref={$bundle[0]}' class='item' id='item-{$bundle[0]}'>
                         <img src='bundle/{$bundle[0]}/cover.jpg' alt='' class='Minia'>
@@ -23,6 +24,19 @@
                 </a>
                 ");
         }
+        } else {
+                foreach($bundles as $bundle){
+                        echo("
+                        <a href='item.php?ref={$bundle[0]}' class='item' id='item-{$bundle[0]}'>
+                                <img src='bundle/{$bundle[0]}/cover.jpg' alt='' class='Minia'>
+                                <p class='title'>{$bundle[2]}</p>
+                                <p class='Artist'>{$bundle[4]}</p>
+                                <p class='Desc'>{$bundle[3]}</p>
+                        </a>
+                        ");
+                }
+        }
+        
 ?>
 </div>
 
