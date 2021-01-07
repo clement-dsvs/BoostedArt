@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 07 jan. 2021 à 08:10
+-- Généré le : jeu. 07 jan. 2021 à 09:23
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -45,7 +45,17 @@ CREATE TABLE `bundle` (
 --
 
 INSERT INTO `bundle` (`id`, `link`, `title`, `description`, `id_user`, `price`, `publication`, `expiration`) VALUES
-(1, 'google.com', 'Bundle Premier', 'Le premier Bundle du Site !', 2, 10, '2021-01-06 09:18:06', '2021-01-31 09:16:48');
+(1, 'ZTYEUWVB4AUXN', 'Bundle Premier', 'Le premier Bundle du Site !', 2, 10, '2021-01-06 09:18:06', '2021-01-31 09:16:48'),
+(2, 'MYJ3J7GWXQ9JL', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:02:06', '2021-01-07 10:02:06'),
+(3, '3A6EM3W8W3ZFE', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:02:40', '2021-01-07 10:02:40'),
+(4, 'A5YYL2UZBGYXJ', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:07:14', '2021-01-07 10:07:14'),
+(5, '7KJ5V759WBQZC', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:07:45', '2021-01-07 10:07:45'),
+(6, '5S3LGVY2ZDRMU', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:05', '2021-01-07 10:08:05'),
+(7, 'MVJBSCQCHA3W2', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:15', '2021-01-07 10:08:15'),
+(8, 'WGLAYV57PHQP4', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:24', '2021-01-07 10:08:24'),
+(9, '8HTQ9MGYPKZFS', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:36', '2021-01-07 10:08:36'),
+(10, 'BSEBKF87AZ7G8', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:48', '2021-01-07 10:08:48'),
+(11, '8DZT8QLPKBGJS', 'Bundle Pas Cher', 'Desc', 2, 0.01, '2021-01-07 10:09:22', '2021-01-07 10:09:22');
 
 -- --------------------------------------------------------
 
@@ -219,7 +229,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `bundle`
 --
 ALTER TABLE `bundle`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT pour la table `commentaries`
