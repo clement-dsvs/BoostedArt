@@ -50,7 +50,7 @@
             <input type="email" placeholder="Adresse mail" name="mail" value="<?php echo $user['mail'];?>">
             <input type="phone" placeholder="Numéro de téléphone" name="phone" value="<?php echo $user['phone'];?>">
             <input type="password" placeholder="Mot de passe" name="password">
-            <input type="Bio" placeholder="Biographie" name="bio" value="<?php echo $user['bio'];?>">
+            <textarea type="Bio" placeholder="Biographie" name="bio" value="<?php echo $user['bio'];?>"></textarea>
 
             <button type="submit" name="modification">Modifier</button>
 
