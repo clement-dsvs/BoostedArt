@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     <link rel="icon" href="Logo/favicon.png"  type="image/png">
+    <script>
+        document.addEventListener('contextmenu',event => event.preventDefault());
+    </script>
 </head>
 
 <header onmousedown="return false">
