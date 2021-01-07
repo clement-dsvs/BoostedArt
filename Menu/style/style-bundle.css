@@ -131,3 +131,8 @@ hr {
     border-top: 8px solid rgba(255, 204, 0, 0.61);
     border-radius: 5px;
 }
+
+#container-shop{
+    width: 70%;
+    margin-left: 15%;
+}
