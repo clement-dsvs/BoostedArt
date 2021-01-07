@@ -45,17 +45,17 @@ CREATE TABLE `bundle` (
 --
 
 INSERT INTO `bundle` (`id`, `link`, `title`, `description`, `id_user`, `price`, `publication`, `expiration`) VALUES
-(1, 'ZTYEUWVB4AUXN', 'Bundle Premier', 'Le premier Bundle du Site !', 2, 10, '2021-01-06 09:18:06', '2021-01-31 09:16:48'),
-(2, 'MYJ3J7GWXQ9JL', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:02:06', '2021-01-07 10:02:06'),
-(3, '3A6EM3W8W3ZFE', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:02:40', '2021-01-07 10:02:40'),
-(4, 'A5YYL2UZBGYXJ', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:07:14', '2021-01-07 10:07:14'),
-(5, '7KJ5V759WBQZC', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:07:45', '2021-01-07 10:07:45'),
-(6, '5S3LGVY2ZDRMU', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:05', '2021-01-07 10:08:05'),
-(7, 'MVJBSCQCHA3W2', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:15', '2021-01-07 10:08:15'),
-(8, 'WGLAYV57PHQP4', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:24', '2021-01-07 10:08:24'),
-(9, '8HTQ9MGYPKZFS', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:36', '2021-01-07 10:08:36'),
-(10, 'BSEBKF87AZ7G8', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:48', '2021-01-07 10:08:48'),
-(11, '8DZT8QLPKBGJS', 'Bundle Pas Cher', 'Desc', 2, 0.01, '2021-01-07 10:09:22', '2021-01-07 10:09:22');
+(1, 'ZTYEUWVB4AUXN', 'Collection Halo', 'Neuf ans après la sortie d\'Halo 4, la collection artistique est enfin disponible dans ce pack.', 2, 10, '2021-01-06 09:18:06', '2021-01-31 09:16:48'),
+(2, 'MYJ3J7GWXQ9JL', 'Concept Arts Halo 2', '2004 a connu le lancement d\'Halo 2, 17 ans plus tard, l\'équipe ayant travaillé sur Halo met à disposition les Artworks du jeu.', 2, 10, '2021-01-07 10:02:06', '2021-01-07 10:02:06'),
+(3, '3A6EM3W8W3ZFE', 'Thème Japon (Sakura)', 'Ce pack contient différents fond écrans et une musique relative au thème du Sakura Japonais.', 2, 10, '2021-01-07 10:02:40', '2021-01-07 10:02:40'),
+(4, 'France - Paris', 'Bundle', 'Tiré sur la thématique Parisienne et sa réputation de Cité des lumières, ce pack réunit différentes musiques et photos prises dans la capitale Française.', 2, 10, '2021-01-07 10:07:14', '2021-01-07 10:07:14'),
+(5, '7KJ5V759WBQZC', 'Boite des années 80', 'Si vous considérez que musicalement, c\'était mieux avant, ce pack est fait pour vous. Il réunit le plus grand titre des années 80 à l\'international ainsi qu\'une collection de fond d\'écrans pour embellir votre ordinateur.', 2, 10, '2021-01-07 10:07:45', '2021-01-07 10:07:45'),
+(6, '5S3LGVY2ZDRMU', 'Starter Pack - Cyberpunk', 'Surfant sur le regain d\'intérêt pour le genre Cyberpunk, ce starter pack contient deux modèles de personnages ainsi qu\'une collection de véhicules non texturés pour lancer votre propre jeu. Il contient aussi un interface utilisable.', 2, 10, '2021-01-07 10:08:05', '2021-01-07 10:08:05'),
+(7, 'MVJBSCQCHA3W2', '[Photoshop] Pinceaux', 'Ce pack contient plusieurs types de pinceaux (ou Brushes) pour Photoshop, venant avec des modèles colorés.', 2, 10, '2021-01-07 10:08:15', '2021-01-07 10:08:15'),
+(8, 'WGLAYV57PHQP4', 'Pokemon Pixel/2D Items', 'Ce pack est fait pour les besoins d\'un créateur en herbe désirant créer un jeu Pokemon en 2D.\r\nIl contient notamment des modèles Pixel Art de Pokemons existants & des fiches pour un Pokédex', 2, 10, '2021-01-07 10:08:24', '2021-01-07 10:08:24'),
+(9, '8HTQ9MGYPKZFS', 'Warcraft Site/Forum Templates', 'Ce pack contient trois types de templates à importer en CSS/HTML pour les besoins d\'un site ou d\'un forum basé sur World of Warcraft. Les trois types diffèrent par rapport aux extensions.', 2, 10, '2021-01-07 10:08:36', '2021-01-07 10:08:36'),
+(10, 'BSEBKF87AZ7G8', 'Zombie Artworks', 'Ce pack contient différents Artworks et leurs licence pour en faire des éléments décoratifs.', 2, 10, '2021-01-07 10:08:48', '2021-01-07 10:08:48'),
+(11, '8DZT8QLPKBGJS', '\"Saucisseum\"', 'Un pack Eco+ réservé à l\'élite de la charcuterie.', 2, 0.01, '2021-01-07 10:09:22', '2021-01-07 10:09:22');
 
 -- --------------------------------------------------------
 
