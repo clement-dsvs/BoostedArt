@@ -3,6 +3,7 @@
     z-index: 1;
     text-decoration: none;
     color: black;
+
 }
 
 a{
@@ -17,6 +18,7 @@ a:visited{
 
 body {
     background-color: lightgray;
+    height: 10000;
 }
 
 #Menu {
@@ -38,6 +40,20 @@ body {
     display:flex;
     justify-content: space-evenly;
     list-style: none;
+    position: sticky;
+}
+
+#panier{
+    max-height: 50px;
+    background-color: #ffcc00;
+    border:2px solid black;
+    border-radius: 5%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    margin : 0px;
+    padding : 0px 20px;
+
 }
    
 #Menu li {
