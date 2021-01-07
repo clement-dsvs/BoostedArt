@@ -47,4 +47,10 @@ h2 {
 }
 .row {
     margin-left:1%;
+
+}
+textarea{
+
+    max-width: 60%;
+
 }
