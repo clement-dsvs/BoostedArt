@@ -11,10 +11,7 @@
 ?>
 
 <div id="container">
-<<<<<<< HEAD
 
-=======
->>>>>>> 85873f14d45884ec5f5c44ef0e7d2b7456924d3b
     <h3><?php echo($bundle["title"])?></h3>
     <h4>Par <?php echo($bundle["id_user"])?></h4>
     <p><?php echo($bundle["description"])?></p>
