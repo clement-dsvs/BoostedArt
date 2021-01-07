@@ -31,14 +31,17 @@
         extract($_POST);
  
         if (isset($_POST['modification'])){
-                $bdd->query("UPDATE user SET name = ?, mail = ?, phone = ?, password = ?, bio = ? WHERE id = ?");
-                $_SESSION['name'] = $name;
-                $_SESSION['mail'] = $mail;
-                $_SESSION['phone'] = $phone;
-                $_SESSION['password'] = $password;
-                $_SESSION['bio'] = $bio;
+                $req = $bdd->prepare($update);
+                $update = "UPDATE user SET name = ?, mail = ?, phone = ?, password = ?, bio = ? WHERE id = ?";
+                $req->execute(array(
+                    $_SESSION['name'] = $name,
+                    $_SESSION['mail'] = $mail,
+                    $_SESSION['phone'] = $phone,
+                    $_SESSION['password'] = $password,
+                    $_SESSION['bio'] = $bio));
+                echo $req->rowCount() . "Modifications enregistrées!";
  
-                header('Location:profile.php');
+                header('Location:profile.php'); 
                 exit;   
         }
     }
