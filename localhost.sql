@@ -45,17 +45,17 @@ CREATE TABLE `bundle` (
 --
 
 INSERT INTO `bundle` (`id`, `link`, `title`, `description`, `id_user`, `price`, `publication`, `expiration`) VALUES
-(1, 'ZTYEUWVB4AUXN', 'Bundle Premier', 'Le premier Bundle du Site !', 2, 10, '2021-01-06 09:18:06', '2021-01-31 09:16:48'),
-(2, 'MYJ3J7GWXQ9JL', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:02:06', '2021-01-07 10:02:06'),
-(3, '3A6EM3W8W3ZFE', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:02:40', '2021-01-07 10:02:40'),
-(4, 'A5YYL2UZBGYXJ', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:07:14', '2021-01-07 10:07:14'),
-(5, '7KJ5V759WBQZC', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:07:45', '2021-01-07 10:07:45'),
-(6, '5S3LGVY2ZDRMU', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:05', '2021-01-07 10:08:05'),
-(7, 'MVJBSCQCHA3W2', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:15', '2021-01-07 10:08:15'),
-(8, 'WGLAYV57PHQP4', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:24', '2021-01-07 10:08:24'),
-(9, '8HTQ9MGYPKZFS', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:36', '2021-01-07 10:08:36'),
-(10, 'BSEBKF87AZ7G8', 'Bundle', 'Desc', 2, 10, '2021-01-07 10:08:48', '2021-01-07 10:08:48'),
-(11, '8DZT8QLPKBGJS', 'Bundle Pas Cher', 'Desc', 2, 0.01, '2021-01-07 10:09:22', '2021-01-07 10:09:22');
+(1, 'ZTYEUWVB4AUXN', 'Collection Halo', 'Neuf ans après la sortie d\'Halo 4, la collection artistique est enfin disponible dans ce pack.', 2, 10, '2021-01-06 09:18:06', '2021-01-31 09:16:48'),
+(2, 'MYJ3J7GWXQ9JL', 'Concept Arts Halo 2', '2004 a connu le lancement d\'Halo 2, 17 ans plus tard, l\'équipe ayant travaillé sur Halo met à disposition les Artworks du jeu.', 2, 10, '2021-01-07 10:02:06', '2021-01-07 10:02:06'),
+(3, '3A6EM3W8W3ZFE', 'Thème Japon (Sakura)', 'Ce pack contient différents fond écrans et une musique relative au thème du Sakura Japonais.', 2, 10, '2021-01-07 10:02:40', '2021-01-07 10:02:40'),
+(4, 'France - Paris', 'Bundle', 'Tiré sur la thématique Parisienne et sa réputation de Cité des lumières, ce pack réunit différentes musiques et photos prises dans la capitale Française.', 2, 10, '2021-01-07 10:07:14', '2021-01-07 10:07:14'),
+(5, '7KJ5V759WBQZC', 'Boite des années 80', 'Si vous considérez que musicalement, c\'était mieux avant, ce pack est fait pour vous. Il réunit le plus grand titre des années 80 à l\'international ainsi qu\'une collection de fond d\'écrans pour embellir votre ordinateur.', 2, 10, '2021-01-07 10:07:45', '2021-01-07 10:07:45'),
+(6, '5S3LGVY2ZDRMU', 'Starter Pack - Cyberpunk', 'Surfant sur le regain d\'intérêt pour le genre Cyberpunk, ce starter pack contient deux modèles de personnages ainsi qu\'une collection de véhicules non texturés pour lancer votre propre jeu. Il contient aussi un interface utilisable.', 2, 10, '2021-01-07 10:08:05', '2021-01-07 10:08:05'),
+(7, 'MVJBSCQCHA3W2', '[Photoshop] Pinceaux', 'Ce pack contient plusieurs types de pinceaux (ou Brushes) pour Photoshop, venant avec des modèles colorés.', 2, 10, '2021-01-07 10:08:15', '2021-01-07 10:08:15'),
+(8, 'WGLAYV57PHQP4', 'Pokemon Pixel/2D Items', 'Ce pack est fait pour les besoins d\'un créateur en herbe désirant créer un jeu Pokemon en 2D.\r\nIl contient notamment des modèles Pixel Art de Pokemons existants & des fiches pour un Pokédex', 2, 10, '2021-01-07 10:08:24', '2021-01-07 10:08:24'),
+(9, '8HTQ9MGYPKZFS', 'Warcraft Site/Forum Templates', 'Ce pack contient trois types de templates à importer en CSS/HTML pour les besoins d\'un site ou d\'un forum basé sur World of Warcraft. Les trois types diffèrent par rapport aux extensions.', 2, 10, '2021-01-07 10:08:36', '2021-01-07 10:08:36'),
+(10, 'BSEBKF87AZ7G8', 'Zombie Artworks', 'Ce pack contient différents Artworks et leurs licence pour en faire des éléments décoratifs.', 2, 10, '2021-01-07 10:08:48', '2021-01-07 10:08:48'),
+(11, '8DZT8QLPKBGJS', '\"Saucisseum\"', 'Un pack Eco+ réservé à l\'élite de la charcuterie.', 2, 0.01, '2021-01-07 10:09:22', '2021-01-07 10:09:22');
 
 -- --------------------------------------------------------
 
@@ -166,6 +166,9 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `name`, `mail`, `phone`, `password`, `creation`, `bio`, `id_rank`) VALUES
 (2, 'Clement Desavis', 'clement@test.com', '0123456789', '$2y$10$lPOYcOISahIssQAR1J30t.bKt6LNRNKn2yVJwzjVpx/sTyLarrrnu', '2021-01-05 13:15:33', NULL, 1),
 (3, 'Pierre', 'pierre@cailloux.com', '0123456789', '$2y$10$7z7gLrcWpgIhgVqOrCe6DudRWDbq/jWdr/sfOVkWdXKR4vErdrZ7S', '2021-01-06 08:41:08', NULL, 1);
+(4, 'Francky Vincent', 'francky.vincent@hotmail.fr', '0123456789', '$2y$10$riNF.akoFscM8SWQuaTR8OQko.pYRsMvprNtjNZRsK7o.soY9RsQ6', '2021-01-07 12:17:35', 'Francky Vincent, de son vrai nom Franck Joseph Vincent, né le 18 avril 1956 à Pointe-à-Pitre, est un producteur de musique et auteur-compositeur-interprète français.\r\n\r\nInterprète de plus de 170 chansons, il est également manager de zouk, acteur et éditeur. Interprète de plusieurs tubes depuis les années 1990 (Fruit de la passion et Alice ça glisse en 1991 ou encore Tu veux mon zizi en 2004), connu pour son répertoire comique et volontiers grivois, il est l\'un des chanteurs antillais les plus célèbres en métropole où il a vendu environ 3 millions d\'albums.', 2),
+(5, 'Patrick Sebastien', 'patrick.sebastien@wanadoo.fr', '0123456789', '$2y$10$rovatJb/NC39TVkZRSBTm.gtty6Pjm3l.A2Zq2Piy.zZMPI0ffRBe', '2021-01-07 12:19:47', 'Patrick Sébastien, né le 14 novembre 1953 à Brive-la-Gaillarde, est un imitateur, humoriste, acteur, réalisateur, chanteur, auteur-compositeur, poète, écrivain, producteur-animateur d\'émissions de divertissement de télévision française et ex-dirigeant de club de rugby.\r\n\r\nIl est aussi l\'auteur-interprète de chansons à thème festif ; parmi les plus célèbres, figurent les titres Le Gambadou, La Fiesta (générique de l\'émission Fiesta), Le Petit Bonhomme en mousse, C\'est chaud, Pourvu que ça dure, Les Sardines, Ah… Si tu pouvais fermer ta gueule..., Tournez les serviettes ou encore Joyeux anniversaire. ', 2),
+(6, 'Yannick Noak', 'yanick.noah@live.fr', '0123456789', '$2y$10$wiufBXA/rfdnZ5RyKxLIDOZXjXrv4YlUrTgkadWyQwUrckieTxRUi', '2021-01-07 12:20:26', 'Yannick Noah, né le 18 mai 1960 à Sedan dans les Ardennes, est un joueur et capitaine de tennis, ainsi qu\'un chanteur français.\r\n\r\nIl débute dès 1991 une carrière de chanteur, à laquelle il se consacre à temps plein, avec succès, depuis 1998, avec une pause de 2015 à 2018 lorsqu\'il reprend le capitanat de l\'équipe de France de Coupe Davis et de Fed Cup. Fils du footballeur camerounais Zacharie Noah, il est le père du basketteur français Joakim Noah. ', 2);
 
 --
 -- Index pour les tables déchargées
