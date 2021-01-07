@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mer. 06 jan. 2021 à 07:38
+-- Généré le : jeu. 07 jan. 2021 à 08:10
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -39,6 +39,13 @@ CREATE TABLE `bundle` (
   `publication` datetime NOT NULL,
   `expiration` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `bundle`
+--
+
+INSERT INTO `bundle` (`id`, `link`, `title`, `description`, `id_user`, `price`, `publication`, `expiration`) VALUES
+(1, 'google.com', 'Bundle Premier', 'Le premier Bundle du Site !', 2, 10, '2021-01-06 09:18:06', '2021-01-31 09:16:48');
 
 -- --------------------------------------------------------
 
@@ -147,7 +154,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `mail`, `phone`, `password`, `creation`, `bio`, `id_rank`) VALUES
-(2, 'Clement Desavis', 'clement@test.com', '0123456789', '$2y$10$lPOYcOISahIssQAR1J30t.bKt6LNRNKn2yVJwzjVpx/sTyLarrrnu', '2021-01-05 13:15:33', NULL, 1);
+(2, 'Clement Desavis', 'clement@test.com', '0123456789', '$2y$10$lPOYcOISahIssQAR1J30t.bKt6LNRNKn2yVJwzjVpx/sTyLarrrnu', '2021-01-05 13:15:33', NULL, 1),
+(3, 'Pierre', 'pierre@cailloux.com', '0123456789', '$2y$10$7z7gLrcWpgIhgVqOrCe6DudRWDbq/jWdr/sfOVkWdXKR4vErdrZ7S', '2021-01-06 08:41:08', NULL, 1);
 
 --
 -- Index pour les tables déchargées
@@ -157,7 +165,8 @@ INSERT INTO `user` (`id`, `name`, `mail`, `phone`, `password`, `creation`, `bio`
 -- Index pour la table `bundle`
 --
 ALTER TABLE `bundle`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_user` (`id_user`);
 
 --
 -- Index pour la table `commentaries`
@@ -210,7 +219,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `bundle`
 --
 ALTER TABLE `bundle`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `commentaries`
@@ -252,11 +261,17 @@ ALTER TABLE `rank`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Contraintes pour les tables déchargées
 --
+
+--
+-- Contraintes pour la table `bundle`
+--
+ALTER TABLE `bundle`
+  ADD CONSTRAINT `bundle_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`);
 
 --
 -- Contraintes pour la table `user`
