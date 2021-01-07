@@ -11,7 +11,7 @@
 ?>
 
 <div id="container">
-
+<p>salut</p>
     <h3><?php echo($bundle["title"])?></h3>
     <h4>Par <?php echo($bundle["id_user"])?></h4>
     <p><?php echo($bundle["description"])?></p>
