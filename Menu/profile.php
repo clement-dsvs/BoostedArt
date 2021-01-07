@@ -1,10 +1,11 @@
-<html>
 <?php
-    require_once 'header.php'; ?>
-    <head>
-        <title>Mon profil</title>
-    </head>
-
+    require_once 'header.php'; 
+    if(!isset($_SESSION["user-name"])){
+        header('location: login.php');
+        exit();
+    }
+    
+?>
     <body>
 
     <?php
@@ -18,14 +19,7 @@ try {
     die('Erreur :' .$e->getMessage());
     }
 
-/* S'il n'y a pas de session alors on ne va pas sur cette page (mais ça marche pô encore lolilol)
-        if(!isset($_SESSION['id'])){ 
-        header('Location: index.php'); 
-        exit; 
-        }
-*/
-
-        $afficher_profil = $bdd->query("SELECT * FROM user");
+        $afficher_profil = $bdd->query("SELECT * FROM user WHERE id={$_SESSION['user-id']}");
         $afficher_profil = $afficher_profil->fetch(); 
 
     ?>
@@ -40,6 +34,17 @@ try {
             <li>Votre compte a été crée le : <?= $afficher_profil['creation'] ?></li>
         </ul>
         <button id="edit"><a href="updateprofile.php">Editer le profil</a></button>
+
+    <?php
+        if($afficher_profil["id_rank"] != 2){
+            echo("<form action='includes/becomeArtist.inc.php' method='post'>
+        <input type='hidden' name='user_id' value='{$_SESSION['user-id']}'>
+        <button type='submit' name='submit'>Devenir Un artiste !</button>   
+    </form>");
+        }
+    ?>
+
+   
 
     </body>
 </html>

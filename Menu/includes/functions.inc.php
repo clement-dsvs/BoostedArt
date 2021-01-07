@@ -48,9 +48,9 @@ function pwdMatch($pwdRepeat,$pwd){
     return $result;
 }
 
-function uidExists($conn, $username, $email){
+function uidExists($conn, $email){
 
-    $sql = "SELECT * FROM user WHERE name = ? OR mail = ?;";
+    $sql = "SELECT * FROM user WHERE mail = ?;";
     $stmt = mysqli_stmt_init($conn);
 
     if  (!mysqli_stmt_prepare($stmt, $sql)){
@@ -58,7 +58,7 @@ function uidExists($conn, $username, $email){
         exit();
     }
     
-    mysqli_stmt_bind_param($stmt, "ss", $username, $email);
+    mysqli_stmt_bind_param($stmt, "s",$email);
 
     mysqli_stmt_execute($stmt);
 
