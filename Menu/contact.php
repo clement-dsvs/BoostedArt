@@ -11,18 +11,18 @@
     <h2>Nous contacter</h2>
 
   <div class="row">
-    <label class="required" for="name">Votre nom :</label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <label class="required" for="name">Votre nom :</label><br /><br>
+    <input id="name" class="input" name="name" type="text" value="" size="30" /><br /><br>
   </div>
 
   <div class="row">
-    <label class="required" for="email">Votre email :</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <label class="required" for="email">Votre email :</label><br /><br>
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br /><br>
   </div>
 
   <div class="row">
-    <label class="required" for="message">Votre message :</label><br />
-    <textarea id="message" class="input" name="message" rows="10" cols="40"></textarea><br />
+    <label class="required" for="message">Votre message :</label><br /><br>
+    <textarea id="message" class="input" name="message" rows="10" cols="40"></textarea><br /><br>
   </div>
     
     <input id="submit_button" type="submit" value="Envoyer" />

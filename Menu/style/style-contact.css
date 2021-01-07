@@ -16,7 +16,7 @@ h2 {
     width: 100%;
 }
 .required {
-    font-family: Redressed, cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-kerning: normal;
     font-size: 25px;
     color: whitesmoke;
@@ -38,7 +38,7 @@ h2 {
     border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
     margin-top: 2%;
-    height: 5%;
+    height: 75px;
 }
 #submit_button:hover {
     background-color: black;
