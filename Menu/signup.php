@@ -52,10 +52,6 @@
                 if($_GET["error"]== "usernametaken"){
                     echo"<p>Username Already taken !</p>";
                 }
-
-                if($_GET["error"]== "none"){
-                    echo"<p>You signed up, Congratulations !</p>";
-                }
             }
 
         ?>

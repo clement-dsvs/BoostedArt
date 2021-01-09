@@ -38,6 +38,9 @@
                     echo"<p>Wrong login, try again !</p>";
                 }
             }
+            if(isset($_GET["justSignedUp"])){
+                echo "<p>Félicitations, vous venez de vous inscrire !</p>";
+            }
 
         ?>
 
