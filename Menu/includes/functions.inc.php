@@ -128,6 +128,8 @@ function loginUser($conn, $mail, $pwd){
         $_SESSION["user-id"] = $uidExists["id"];
         $_SESSION["user-name"] = $uidExists["name"];
         $_SESSION["user-mail"] = $uidExists["mail"];
+        $_SESSION["user-bio"] = $uidExists["bio"];
+        $_SESSION["user-phone"] = $uidExists["phone"];
         header("location: ../shop.php");
     }
 
