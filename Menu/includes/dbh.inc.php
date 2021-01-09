@@ -2,7 +2,7 @@
 
 $serverName = "localhost";
 $cBUsername = "root";
-$dBPassWord = "";
+$dBPassWord = "root";
 $dBName = "boosted-art";
 
 $conn = mysqli_connect($serverName,$cBUsername,$dBPassWord,$dBName);
