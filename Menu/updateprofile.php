@@ -36,12 +36,21 @@
         }
     }
 ?>
+
+<?php 
+        
+    $namepreview = $bdd->query("SELECT name FROM user WHERE id ={$_SESSION['user-id']}");
+    $mailpreview = $bdd->query("SELECT mail FROM user WHERE id ={$_SESSION['user-id']}");
+    $phonepreview = $bdd->query("SELECT phone FROM user WHERE id ={$_SESSION['user-id']}");
+    $biopreview = $bdd->query("SELECT bio FROM user WHERE id ={$_SESSION['user-id']}");
+
+?>
         <div>Modification<br><br></div>
         <form method="post">
-            <input type="text" placeholder="Prénom et nom" name="name" value="<?php echo $user['name'];?>">
-            <input type="email" placeholder="Adresse mail" name="mail" value="<?php echo $user['mail'];?>">
-            <input type="phone" placeholder="Numéro de téléphone" name="phone" value="<?php echo $user['phone'];?>">
-            <textarea type="Bio" placeholder="Biographie" name="bio" value="<?php echo $user['bio'];?>"></textarea>
+            <input type="text" name="name" value="<?php echo $namepreview->execute();?>">
+            <input type="email" name="mail" value="<?php echo $user['mail'];?>">
+            <input type="phone" name="phone" value="<?php echo $user['phone'];?>">
+            <textarea type="Bio" name="bio" value="<?php echo $user['bio'];?>"></textarea>
 
             <button type="submit" name="modification">Modifier</button>
 
