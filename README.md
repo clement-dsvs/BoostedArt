@@ -77,11 +77,11 @@ Laure arrived later, as she joined us in the early days of Boosted'Art, but very
 
 ### Clement DESAVIS
 
-> Head of the previous project "ADEYA", Clément is our Swiss Army Knife with knowledge in most fields given his original background. Javascript questions and database reporting were his favourite areas where he was able to coordinate.
+> Head of the previous project "ADEYA", Clément is our Swiss Army Knife with knowledge in most fields given his original background. Javascript, PhP questions and database reporting were his favourite areas where he was able to coordinate.
 
 ### Florian HERMEL
 
-> Florian is our indicated back-end comrade, so he has been arranged together with Clément and Laure on SQL and database issues.
+> Florian is our indicated full stack comrade, so he has been arranged together with Clément and Laure on features and database, and work on website design with Jeremy and Enzo
 
 ### Enzo DUPONT
 
