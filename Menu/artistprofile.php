@@ -1,6 +1,19 @@
 <html>
 <head>
 <?php
+    require_once 'header.php'; 
+    if(!isset($_SESSION["user-name"])){
+        header('location: login.php');
+        exit();
+    }
+    
+?>
+    <title>Profil Artiste</title>
+    <link rel="stylesheet" href="style/style-artists.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+</head>
+<?php
         require_once 'header.php';
     ?>
     <link rel="stylesheet" href="/style/artists.css">
@@ -21,13 +34,17 @@ catch(Exception $e) {
 $getArtist = $bdd->prepare('SELECT * FROM user WHERE id = ?');
 $getArtist->execute(array($_GET['id']));
 foreach($getArtist->fetchAll() as $data) {
-echo("<div class='a'>
-        <div class='nd'>
-            <div id='name'><b>• Nom de l'artiste : </b>{$data['name']}<br><br></div>
-            <div id='bio'>'<i> {$data['bio']}</i>'<br><br>
-            <div id='date'>Membre depuis : {$data['creation']}<br><br></div>
-        </div>
+    echo("
+    <div class='section'>
+        <div class='name'><h2>Nom de l'artiste</h2>{$data['name']}</div>
+        <div class='date'>Membre depuis le {$data['creation']}</div>
+        <br>
         <button id='consult'><a href='artists.php'>Retour</a></button>
-        <br><br><br>
-</div>");
+    </div>
+    <br>
+    <div class='section2'>
+        <div class='bio'><h2>Sa biographie</h2>'<i> {$data['bio']}</i>'</div>
+    </div>
+    
+");
 }?>
