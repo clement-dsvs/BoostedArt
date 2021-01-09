@@ -13,7 +13,7 @@ body{
     width: 250px;
     height: 350px;
     border-radius: 6px 6px 25px 25px;
-    position: absolute;
+    margin-left: 10%;
     box-shadow: 3px 3px 15px black;
     background-color: rgb(13, 13, 13);
 }
@@ -119,13 +119,6 @@ p.desc {
         color: rgb(255, 204, 0)
 }
 
-#item-2.item {
-    margin-left: 20%;
-}
-
-#item-3.item {
-    margin-left: 40%;
-}
 
 hr {
     border-top: 8px solid rgba(255, 204, 0, 0.61);
