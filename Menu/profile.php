@@ -6,6 +6,7 @@
     }
     
 ?>
+
     <body>
 
     <?php
@@ -32,6 +33,7 @@ try {
             <li>Votre numéro de téléphone est : <?= $afficher_profil['phone'] ?></li>
             <li>Votre bio est : <?= $afficher_profil['bio'] ?></li>
             <li>Votre compte a été crée le : <?= $afficher_profil['creation'] ?></li>
+            <li>Il s'agit d'un : <?php if ($afficher_profil['id_rank'] == 2){ echo"Artiste";} else {echo"utilisateur";} ?></li>
         </ul>
         <button id="edit"><a href="updateprofile.php">Editer le profil</a></button>
 

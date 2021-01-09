@@ -1,8 +1,9 @@
-<html>
+
 <?php
     require_once 'header.php'; ?>
 
     <head>
+
     <title>Modifier votre profil</title>
     </head>
     <body>      
@@ -41,7 +42,7 @@
             <input type="text" name="name" value="<?php echo $_SESSION["user-name"];?>">
             <input type="email" name="mail" value="<?php echo $_SESSION["user-mail"];?>">
             <input type="phone" name="phone" value="<?php echo $_SESSION["user-phone"];?>">
-            <textarea type="Bio" name="bio" value="<?php echo $_SESSION["user-bio"];?>"></textarea>
+            <textarea type="Bio" name="bio"><?php echo utf8_decode($_SESSION["user-bio"]);?></textarea> <!--on a essayer mais utf8_decode ne fonctionne pas :'( -->
 
             <button type="submit" name="modification">Modifier</button>
 
