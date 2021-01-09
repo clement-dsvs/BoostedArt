@@ -15,12 +15,12 @@
                         <p class='title'>{$bundle[2]}</p>
                         <p class='Artist'>{$bundle[8]}</p>
                         <p class='Desc'>{$bundle[3]}</p>
-                        <form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
+                        <center><div class='bouton'><form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
                                 <input type='hidden' name='cmd' value='_s-xclick'>
                                 <input type='hidden' name='hosted_button_id' value='{$bundle[1]}'>
                                 <input type='image' src='https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_SM.gif' border='0' name='submit' alt='PayPal, le réflexe sécurité pour payer en ligne'>
                                 <img alt='' border='0' src='https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif' width='1' height='1'>
-                                </form>
+                                </form></div></center>
                 </a>
                 ");
         }
