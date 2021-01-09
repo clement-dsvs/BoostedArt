@@ -18,8 +18,6 @@
     die('Erreur :' .$e->getMessage());
     }
 
-    $user = $bdd->query("SELECT * FROM user WHERE id = ?");
-
  
     if(!empty($_POST)){
         extract($_POST);
@@ -31,26 +29,19 @@
                     $_SESSION['mail'] = $mail,
                     $_SESSION['phone'] = $phone,
                     $_SESSION['bio'] = $bio));
-                echo $req->rowCount() . "Modifications enregistrées!";
-
+                
+                echo $req->rowCount() . "Modifications enregistrées! Veuillez vous reconnecter pour voir les modification." ;
+                
         }
     }
 ?>
 
-<?php 
-        
-    $namepreview = $bdd->query("SELECT name FROM user WHERE id ={$_SESSION['user-id']}");
-    $mailpreview = $bdd->query("SELECT mail FROM user WHERE id ={$_SESSION['user-id']}");
-    $phonepreview = $bdd->query("SELECT phone FROM user WHERE id ={$_SESSION['user-id']}");
-    $biopreview = $bdd->query("SELECT bio FROM user WHERE id ={$_SESSION['user-id']}");
-
-?>
         <div>Modification<br><br></div>
         <form method="post">
-            <input type="text" name="name" value="<?php echo $namepreview->execute();?>">
-            <input type="email" name="mail" value="<?php echo $user['mail'];?>">
-            <input type="phone" name="phone" value="<?php echo $user['phone'];?>">
-            <textarea type="Bio" name="bio" value="<?php echo $user['bio'];?>"></textarea>
+            <input type="text" name="name" value="<?php echo $_SESSION["user-name"];?>">
+            <input type="email" name="mail" value="<?php echo $_SESSION["user-mail"];?>">
+            <input type="phone" name="phone" value="<?php echo $_SESSION["user-phone"];?>">
+            <textarea type="Bio" name="bio" value="<?php echo $_SESSION["user-bio"];?>"></textarea>
 
             <button type="submit" name="modification">Modifier</button>
 
