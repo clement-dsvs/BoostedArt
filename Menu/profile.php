@@ -1,3 +1,4 @@
+<head>
 <?php
     require_once 'header.php'; 
     if(!isset($_SESSION["user-name"])){
@@ -6,13 +7,19 @@
     }
     
 ?>
+    <title>BVotre Profil</title>
+    <link rel="stylesheet" href="style/style-profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+</head>
+
 
     <body>
 
     <?php
 
 try {
-    $bdd=new PDO('mysql:host=localhost;dbname=boosted-art;charset=UTF8', 'root','root');
+    $bdd=new PDO('mysql:host=localhost;dbname=boosted-art;charset=UTF8', 'root','');
     array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
     }
 
