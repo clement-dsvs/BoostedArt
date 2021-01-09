@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : sam. 09 jan. 2021 à 14:35
+-- Généré le : sam. 09 jan. 2021 à 20:09
 -- Version du serveur :  5.7.24
 -- Version de PHP : 7.2.19
 
@@ -158,6 +158,14 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `mail`, `phone`, `password`, `bio`, `creation`, `id_rank`) VALUES
+(1, 'test', 'test@test.com', '0123456789', '$2y$10$p.JV8unN6SUpwexGxmq3I.rBXhil18Bo3lo0vtEgasHXnsfJidqEO', NULL, '2021-01-09 18:13:21', 1),
+(2, 'Artiste inconnu', 'jauraivouluetreunartiste@gmail.com', '0987654321', '$2y$10$HPPn1MSAFvL5Ef2VvX5btuZmhfZhXbFY0w6YqfrhXuGmu3CZc.5qW', 'Un artiste dont on ne connais rien, mais qui fût un précurseur de Boosted\'Art !', '2021-01-09 18:27:39', 1);
+
+--
 -- Index pour les tables déchargées
 --
 
@@ -175,7 +183,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
