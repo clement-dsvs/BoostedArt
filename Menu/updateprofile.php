@@ -7,7 +7,7 @@
     }
     
 ?>
-    <title>Votre Profil</title>
+    <title>Modifier votre Profil</title>
     <link rel="stylesheet" href="style/style-updateprofile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
