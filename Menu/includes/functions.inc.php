@@ -137,7 +137,7 @@ function loginUser($conn, $mail, $pwd){
 
 function getItems($conn){
 
-    $sql = "SELECT * FROM bundle;";
+    $sql = "SELECT bundle.*,user.name FROM bundle INNER JOIN `user` ON bundle.id_user=user.id;";
     $stmt = mysqli_stmt_init($conn);
 
     if(!mysqli_stmt_prepare($stmt,$sql)){

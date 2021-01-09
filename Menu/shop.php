@@ -13,7 +13,7 @@
                 <a href='item.php?ref={$bundle[0]}' class='item' id='item-{$bundle[0]}'>
                         <img src='bundle/{$bundle[0]}/cover.jpg' alt='' class='Minia'>
                         <p class='title'>{$bundle[2]}</p>
-                        <p class='Artist'>{$bundle[4]}</p>
+                        <p class='Artist'>{$bundle[8]}</p>
                         <p class='Desc'>{$bundle[3]}</p>
                         <form target='paypal' action='https://www.paypal.com/cgi-bin/webscr' method='post'>
                                 <input type='hidden' name='cmd' value='_s-xclick'>
