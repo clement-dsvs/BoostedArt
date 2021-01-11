@@ -1,5 +1,5 @@
 <?php
-
+//Fonction vérifiant que les entrées du formulaire d'inscription sont bien remplies
 function emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat){
 
     if  (empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdRepeat)){
@@ -11,7 +11,7 @@ function emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat){
 
     return $result;
 }
-
+//Fonction verifiant que le téléphone rentré dans le formulaire ne contient bien que des chiffres
 function invalidPhone($phone){
 
     if  (!preg_match("/^[0-9]*$/", $phone)){
@@ -23,7 +23,7 @@ function invalidPhone($phone){
 
     return $result;
 }
-
+//Fonction verifiant que l'e-mail rentré soit de la bonne forme
 function invalidEmail($email){
 
     if  (!filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -35,7 +35,7 @@ function invalidEmail($email){
 
     return $result;
 }
-
+//Fonction verifiant que les mots de passes rentrés dans le formulaire d'inscription sont identiques
 function pwdMatch($pwdRepeat,$pwd){
     
     if  ($pwd !== $pwdRepeat){
@@ -47,7 +47,7 @@ function pwdMatch($pwdRepeat,$pwd){
 
     return $result;
 }
-
+//fonction verifiant si un utilisateur donné existe dans la base de donnée, si il existe il est retourné sous forme d'array
 function uidExists($conn, $email){
 
     $sql = "SELECT * FROM user WHERE mail = ?;";
@@ -75,7 +75,7 @@ function uidExists($conn, $email){
     mysqli_stmt_close($stmt);
    
 }
-
+//fonction créant un utilisateur dans la base de données
 function createUser($conn, $name,$email,$phone,$pwd){
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
     $sql = "INSERT INTO user (name,mail,phone,password) VALUES ('{$name}', '{$email}', '{$phone}', '{$hashedPwd}') ;";
@@ -93,7 +93,7 @@ function createUser($conn, $name,$email,$phone,$pwd){
     exit();
 
 }
-
+//Fonction verifiant que tous les champs du formulaire de connexion soient bien remplis
 function emptyInputLogin($mail,$pwd){
 
     if  (empty($mail) || empty($pwd)){
@@ -105,7 +105,7 @@ function emptyInputLogin($mail,$pwd){
 
     return $result;
 }
-
+//fonction connectant un utilisateur si l'e-mail correspond à un utilisateur dans la base et si le mdp est correct
 function loginUser($conn, $mail, $pwd){
 
     $uidExists = uidExists($conn, $mail, $mail);
@@ -134,7 +134,7 @@ function loginUser($conn, $mail, $pwd){
     }
 
 }
-
+//fonction retournant tous les objets du magasin
 function getItems($conn){
 
     $sql = "SELECT bundle.*,user.name FROM bundle INNER JOIN `user` ON bundle.id_user=user.id;";
@@ -155,7 +155,7 @@ function getItems($conn){
     return $rows;
 
 }
-
+//fonction retournant les informations d'un objet precis
 function getBundleInfos($conn,$ref_bundle){
     $sql = "SELECT * FROM bundle WHERE id = ?;";
     $stmt = mysqli_stmt_init($conn);
