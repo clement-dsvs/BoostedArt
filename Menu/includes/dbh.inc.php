@@ -1,5 +1,5 @@
 <?php
-
+//Initialisation de la connexion à la base de données SQL
 $serverName = "localhost";
 $cBUsername = "root";
 $dBPassWord = "root";
