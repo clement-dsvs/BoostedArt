@@ -1,5 +1,5 @@
 <?php
-
+//On vérifie si l'utilisateur est bien arrivé sur cette page par la redirection du formulaire de connexion
 if (isset($_POST["submit"])){
 
     $mail = $_POST["e-mail"];
@@ -17,7 +17,7 @@ if (isset($_POST["submit"])){
 
 }
 
-else {
+else {//Sinon il est renvoyé sur la page de connexion
     header("location: ../login.php");
         exit();
 
