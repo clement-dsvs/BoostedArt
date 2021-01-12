@@ -5,9 +5,9 @@ require_once 'includes/functions.inc.php';
 <link rel="stylesheet" href="style/style-item.css">
 <?php
 require_once 'header.php';
-$id_bundle = $_GET['ref'];
+$id_bundle = $_GET['ref']; //On récupère l'id du bundle passé en référence dans l'adresse de la page
 $bundle = getBundleInfos($conn,$id_bundle);
-$pictures = scandir('bundle/'. $bundle["id"].'/');
+$pictures = scandir('bundle/'. $bundle["id"].'/'); //On recherche dans le dossier correspondant à l'id du bundle les images présentes
 ?>
 
 <body>
