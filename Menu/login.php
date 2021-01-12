@@ -16,7 +16,7 @@
         <h2>Se connecter</h2>
 
         <div class="signup-form-form">
-
+<!--Formulaire de Connexion-->
         <form action="includes/login.inc.php" method="post" id="formins">
             <div class="ins">
                 <input type="text" name="e-mail" id="mail" placeholder="E-mail">
