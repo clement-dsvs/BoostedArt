@@ -12,7 +12,8 @@
     <section class="signup-form">
 
         <h2>S'inscrire</h2>
-
+        
+        <!--Formulaire d'Inscription-->
         <form action="includes/signup.inc.php" method="post" id="formins">
 
             <div class="ins">
@@ -26,7 +27,7 @@
         </form>
         <div id="compte">Déjà un compte ? Cliquez <a href="login.php">ici</a></div>
         <?php
-
+       //Gestion des erreurs
             if(isset($_GET["error"])){
 
                 if($_GET["error"]== "emptyinput"){
