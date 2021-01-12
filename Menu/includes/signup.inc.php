@@ -1,6 +1,6 @@
 <?php
 
-if  (isset($_POST["submit"])){
+if  (isset($_POST["submit"])){//On vérifie que l'utilisateur soit arrivé sur cette page par la redirection du formulaire d'insciption
     
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -40,7 +40,7 @@ if  (isset($_POST["submit"])){
 
 }
 
-else{
+else{//Sinon il est redirigé vers la page d'inscription
     header("location: ../signup.php");
     exit();
 }
