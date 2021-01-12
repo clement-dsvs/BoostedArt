@@ -7,7 +7,7 @@
 
         $bundles = getItems($conn);
         echo("<div id='container-shop'>");
-        if(isset($_SESSION["user-name"])){
+        if(isset($_SESSION["user-name"])){//On vérifie si l'utilisateur est connecté, si oui, on affiche le bouton permettant d'ajouter au panier
                 foreach($bundles as $bundle){
                 echo("
                 <a href='item.php?ref={$bundle[0]}' class='item' id='item-{$bundle[0]}'>
